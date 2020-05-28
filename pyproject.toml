@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "wikifun"
+version = "0.1.0"
+authors = ["Jianbo Liu <liuchienpo@gmail.com>"]
+description = "The wikifun Python project"
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/txdyt/wikifun"
+repository = "https://github.com/txdyt/wikifun"
+keywords = ["wikifun"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "^7.1.2"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
