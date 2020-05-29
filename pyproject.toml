@@ -22,6 +22,16 @@ pytest-cov = "^2.9.0"
 [tool.poetry.scripts]
 wikifun = "wikifun.console:main"
 
+[tool.coverage.paths]
+source = ["src", "*/site-packages"]
+
+[tool.coverage.run]
+branch = true
+source = ["wikifun"]
+
+[tool.coverage.report]
+show_missing = true
+
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
