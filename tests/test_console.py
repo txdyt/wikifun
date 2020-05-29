@@ -22,3 +22,8 @@ def mock_request_get(mocker):
 def test_main_succeeds(runner, mock_request_get):
     result = runner.invoke(console.main)
     assert result.exit_code == 0
+
+
+def test_main_prints_title(runner, mock_request_get):
+    result = runner.invoke(console.main)
+    assert "Lorem Ipsum" in result.output
